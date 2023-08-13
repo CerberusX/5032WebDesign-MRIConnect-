@@ -1,0 +1,70 @@
+﻿@{
+    ViewBag.Title = "About MRI Appointments";
+}
+<style>
+    body {
+        background-image: url('@Url.Content("~/uploads/bg.jpg")');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        color: #ffffff;
+        font-family: 'Microsoft YaHei', sans-serif;
+    }
+
+    main {
+        background-color: rgba(0, 0, 0, 0.5); /* 黑色背景加上60%的透明度 */
+        padding: 30px;
+        border-radius: 10px;
+        max-width: 800px;
+        margin: 50px auto;
+    }
+
+    hr {
+        border-top: 1px solid #ddd;
+        margin: 20px 0;
+    }
+
+    h2, h3 {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* 文字阴影 */
+    }
+        h2:hover, h3:hover, p:hover {
+            color: #89CFF0; /* 淡蓝色 */
+        }
+
+    p:hover {
+        background-color: rgba(211, 211, 211, 0.2); /* 淡灰色的透明背景 */
+    }
+
+    h2:hover, h3:hover {
+        text-decoration: underline;
+        text-decoration-color: #89CFF0;
+    }
+
+    h2, h3, p {
+        transition: all 0.5s ease-in-out;
+    }
+
+
+</style>
+<main aria-labelledby="title">
+    <h2 id="title">@ViewBag.Title</h2>
+    <h3>@ViewBag.Message</h3>
+
+    <p><strong>What is MRI?</strong></p>
+    <p>Magnetic Resonance Imaging (MRI) is a non-invasive imaging technique used to visualize the internal structures of the body in high detail. It uses a strong magnetic field and radio waves to generate images and is considered safe for most patients.</p>
+
+    <hr>
+
+    <p><strong>Why Book an Appointment with Us?</strong></p>
+    <p>We offer a seamless, efficient, and patient-centric MRI booking service. Our advanced systems ensure minimal wait times, and our team of professionals is committed to providing you with a comfortable experience.</p>
+
+    <hr>
+
+    <p><strong>How to Book?</strong></p>
+    <p>Use our user-friendly portal to choose a suitable date and time. If you have any specific requirements or questions, please get in touch with our support team.</p>
+
+    <hr>
+
+    <p><strong>Post-Appointment Services:</strong></p>
+    <p>Once your MRI is complete, you can expect the results to be delivered to you and your doctor within a short period. We also provide post-scan consultations to address any concerns.</p>
+</main>

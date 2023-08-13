@@ -1,0 +1,107 @@
+﻿@{
+    ViewBag.Title = "MRIConnect";
+}
+
+<style>
+    body {
+        position: relative;
+        background-image: url('@Url.Content("~/uploads/rr.jpg")');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        color: #ffffff;
+        font-family: 'Microsoft YaHei', sans-serif;
+        min-height: 200vh;
+    }
+
+    body::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 100vh; 
+        background: linear-gradient(to bottom, transparent 60%, rgba(255,255,255,1) 100%), url('https://www.washburn.edu/_redesign2018/_files/images/interior/applied_studies/allied-health/MRI-header.jpg');
+        background-size: cover, cover;
+        background-repeat: no-repeat, no-repeat;
+        background-attachment: fixed, fixed;
+        z-index: -1;
+    }
+
+    main {
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 30px;
+        border-radius: 10px;
+        max-width: 800px;
+        margin: 50px auto;
+        position: fixed;
+
+    }
+    footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        padding: 10px 0;
+        font-family: 'Microsoft YaHei', sans-serif;
+    }
+    hr {
+        border-top: 1px solid #ddd;
+        margin: 20px 0;
+    }
+
+    h2, h3 {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    }
+
+    h2:hover, h3:hover, p:hover {
+        color: #89CFF0;
+    }
+
+    p:hover {
+        background-color: rgba(211, 211, 211, 0.2);
+    }
+
+    h2:hover, h3:hover {
+        text-decoration-color: #89CFF0;
+    }
+
+    h2, h3, p {
+        transition: all 0.5s ease-in-out;
+    }
+
+    .btn-primary {
+        background-color: #89CFF0;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .btn-primary:hover {
+        background-color: royalblue;
+    }
+</style>
+
+<main aria-labelledby="title">
+    <h2 id="title">Welcome to @ViewBag.Title</h2>
+    <h3>Your Trusted MRI Appointment System</h3>
+
+    <p>Experience a seamless MRI booking experience with our user-friendly portal. From choosing your preferred slot to getting the results, everything is made easy and efficient for you.</p>
+
+    <hr>
+
+    <p>Key Features:</p>
+    <ul>
+        <li>Easy appointment scheduling</li>
+        <li>Minimal waiting time</li>
+        <li>Expert radiologists and support staff</li>
+        <li>Modern and comfortable MRI machines</li>
+        <li>Quick report generation</li>
+    </ul>
+
+    <hr>
+
+    <p><strong>Ready to Book?</strong></p>
+    <p>Start your journey to better health and diagnostics. Book your MRI appointment now.</p>
+    <p><a href="~/Appointments/Index" class="btn btn-primary">Book Now</a></p>
+</main>
